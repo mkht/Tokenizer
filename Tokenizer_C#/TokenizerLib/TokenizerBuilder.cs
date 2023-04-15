@@ -184,9 +184,9 @@ namespace Microsoft.DeepDev
             get
             {
                 string assemblyPath = Assembly.GetExecutingAssembly().Location;
-                UriBuilder uri = new UriBuilder(assemblyPath);
-                string path = Uri.UnescapeDataString(uri.Path);
-                return Path.GetDirectoryName(path);
+                // UriBuilder uri = new UriBuilder(assemblyPath);
+                // string path = Uri.UnescapeDataString(uri.Path);
+                return Path.GetDirectoryName(assemblyPath);
             }
         }
 
